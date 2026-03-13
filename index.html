@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>  weather app </title>
+</head>
+<body>
+
+    <div class="weather-card p-9 h-[500px] rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl text-center text-black w-[500px]">
+    <div class="flex gap-2 mb-6">
+        <input type="text" id="cityInput" placeholder="Enter city" class="w-full bg-white/20 border-none rounded-lg px-3 py-2 text-black placeholder:text-black/70 outline-none focus:ring-2 focus:ring-yellow-400">
+        <button id="searchBtn" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold p-2 rounded-lg transition-all">🔍</button>
+    </div>
+
+    <div class="weather-info">
+        <img id="weatherIcon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="icon" class="mx-auto w-24">
+        
+        <h1 class="text-5xl font-bold text-black" id="temp">--°C</h1>
+        <h2 class="text-2xl text-black  font-semibold font-light mt-2" id="cityName">Search City</h2>
+        
+        <div class="flex justify-between mt-8 border-t border-white/20 pt-4">
+            <div class="detail-item">
+                <span id="humidity" class=" text-black font-semiboldblock text-xl font-semibold">--%</span>
+                <p class="text-xs opacity-70 text-black font-semibold uppercase tracking-widest">Humidity</p>
+            </div>
+            <div class="detail-item">
+                <span id="wind" class=" text-black font-semibold block text-xl font-semibold">-- km/h</span>
+                <p class="text-xs text-black font-semibold opacity-70 uppercase tracking-widest">Wind</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
